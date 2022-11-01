@@ -545,12 +545,12 @@ section:nth-child(even){
 }
 .main__team__cards__card {
     position: relative;
-    width: 280px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     margin: 20px;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, .5);
     border-radius: 15px;
-    background: rgba(255, 174, 1, 0.7);
+    background: rgba(194, 132, 0, 0.8);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -578,7 +578,7 @@ section:nth-child(even){
     bottom: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-size: 850px;
+    background-size: 600px;
     object-fit: cover;
     background-position: center;
     opacity: 1;
@@ -608,24 +608,26 @@ section:nth-child(even){
     background-image: url(../images/mesero2.jpg);
 }
 .main__team__cards__card__content__title {
-    font-size: 1.9em;
+    font-size: 2.7em;
     color: #ff0534;
     letter-spacing: 2px;
-    text-shadow: 2px 3px #010101;
+    text-shadow: 1px 2px #010101;
     z-index: 100;
 }
 .main__team__cards__card__content__txt {
-    font-size: 1.2em;
+    margin: 20px;
+    font-size: 1.8em;
     color: rgb(245, 245, 245);
-    text-shadow: 3px 3px 2px #000;
+    text-shadow: 1px 2px 2px #000;
     font-weight: 300;
 }
 .main__team__cards__card__content__link {
     display: inline-block;
     padding: 10px 20px;
     margin-top: 15px;
-    background: rgba(245, 245, 245);
-    color: #010101;
+    background: var(--black);
+    color: rgba(245, 245, 245);
+    font-size: 1.7em;
     border-radius: 20px;
     text-decoration: none;
     font-weight: bolder;
@@ -633,7 +635,7 @@ section:nth-child(even){
     transition: .5s;
 }
 .main__team__cards__card__content__link:hover {
-background: #00ffe7;
+background: var(--red);
 }
 
 
@@ -738,7 +740,7 @@ background: #00ffe7;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid rgb(165, 165, 165);
+    border-top: 1px solid var(--black);
     padding: 25px 0 0 0;
     font-size: 2rem;
     font-weight: bold;
@@ -872,12 +874,12 @@ background: #00ffe7;
     }
 
     .header__nav{
+        display: block;
         position: absolute;
         top:100%; left:0; right:0;
         background:rgb(241, 241, 241);
         border-top: .1rem solid rgba(0,0,0,.2);
         border-bottom: .1rem solid rgba(0,0,0,.2);
-        padding:1rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
