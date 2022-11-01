@@ -84,6 +84,23 @@ section:nth-child(even){
     letter-spacing: .1rem;
 }
 
+.divider{
+	position: relative;
+	margin: 50px 0;
+	height: 1px;
+}
+
+.div-transparent:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 95%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
 
 
 
@@ -115,10 +132,18 @@ section:nth-child(even){
     height: auto;
 }
 
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .header__nav a{
     font-size: 1.7rem;
     border-radius: .5rem;
-    padding:.5rem 1.5rem;
+    margin: .3em;
+    padding:.8rem 1.5rem;
     color:var(--light-color);
 }
 
@@ -191,7 +216,7 @@ section:nth-child(even){
 }
 
 .main__hero__content .btn {
-    padding: 1em 2em;
+    padding: .8em 2em;
 }
 
 
@@ -416,15 +441,17 @@ section:nth-child(even){
 .main__menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+    gap: 1.5rem;
     margin-top: 50px;
 }
 
 .main__menu .box-container .box{
     background: rgb(250, 250, 250);
-    border:.1rem solid rgba(0,0,0,.2);
+    border: .1rem solid rgba(0,0,0,.2);
     border-radius: .5rem;
-    box-shadow: var(--box-shadow);    
+    box-shadow: var(--box-shadow);
+    padding-bottom: 75px;
+    position: relative;
 }
 
 .main__menu .box-container .box .image{
@@ -461,7 +488,7 @@ section:nth-child(even){
 }
 
 .main__menu .box-container .box .content{
-    padding:2rem;
+    padding: 2rem;
     padding-top: 0;
 }
 
@@ -481,15 +508,26 @@ section:nth-child(even){
 
 .main__menu .box-container .box .content p{
     color:var(--light-color);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding:.5rem 0;
     line-height: 1.5;
 }
 
-.main__menu .box-container .box .content .price{
+.main__menu .box-container .box .content .menu__btn-price{
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.main__menu .box-container .box .content .menu__btn-price a {
+    padding: 10px 20px;
+}
+
+.main__menu .box-container .box .content .menu__btn-price .price{
     color:var(--red);
     margin-left: 1rem;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 
