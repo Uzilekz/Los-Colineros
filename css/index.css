@@ -84,23 +84,6 @@ section:nth-child(even){
     letter-spacing: .1rem;
 }
 
-.divider{
-	position: relative;
-	margin: 50px 0;
-	height: 1px;
-}
-
-.div-transparent:before{
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 95%;
-	height: 1px;
-	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
-}
-
 
 
 
@@ -438,6 +421,10 @@ section:nth-child(even){
     color: var(--red);
 }
 
+#pasta, #carne, #pescado, #vegetal, #ensalada, #postre {
+    display: none;
+}
+
 .main__menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -528,6 +515,125 @@ section:nth-child(even){
     margin-left: 1rem;
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+
+
+
+
+/* EQUIPO */
+.main__team {
+    padding: 75px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+.main__team__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main__team__cards__card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    background: rgba(255, 174, 1, 0.7);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+}
+.main__team__cards__card__content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: .5s;
+}
+.main__team__cards__card:hover .main__team__cards__card__content {
+    transform: translateY(0);
+    opacity: 1;
+}
+.main__team__cards__card__img {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 850px;
+    object-fit: cover;
+    background-position: center;
+    opacity: 1;
+    filter: blur(0);
+    transition: .5s;
+}
+.main__team__cards__card:hover .main__team__cards__card__img {
+    opacity: 0.3;
+    filter: blur(5px);
+}
+.card-img-1 {
+    background-image: url(../images/jefe.jpg);
+}
+.card-img-2 {
+    background-image: url(../images/chef1.jpg);
+}
+.card-img-3 {
+    background-image: url(../images/chef2.jpg);
+}
+.card-img-4 {
+    background-image: url(../images/chef3.jpg);
+}
+.card-img-5 {
+    background-image: url(../images/mesero1.jpg);
+}
+.card-img-6 {
+    background-image: url(../images/mesero2.jpg);
+}
+.main__team__cards__card__content__title {
+    font-size: 1.9em;
+    color: #ff0534;
+    letter-spacing: 2px;
+    text-shadow: 2px 3px #010101;
+    z-index: 100;
+}
+.main__team__cards__card__content__txt {
+    font-size: 1.2em;
+    color: rgb(245, 245, 245);
+    text-shadow: 3px 3px 2px #000;
+    font-weight: 300;
+}
+.main__team__cards__card__content__link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    background: rgba(245, 245, 245);
+    color: #010101;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+.main__team__cards__card__content__link:hover {
+background: #00ffe7;
 }
 
 
