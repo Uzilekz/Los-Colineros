@@ -55,7 +55,7 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
     autoplay: {
-        delay: 7500,
+        delay: 4000,
         disableOnInteraction: false,
     },
 });
