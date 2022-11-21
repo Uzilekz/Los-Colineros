@@ -1,6 +1,6 @@
 # "Los Colineros"
 
-En este proyecto se busca crear una pagina web para un restaurante como proyecto final del Bootcamp "Generacion T" \
+En este proyecto se busca crear una pagina web para un restaurante como proyecto final de "Generacion T" \
 [Enlace a la Pagina.](https://uzilekz.github.io/Los-Colineros/)
 
 ## "Funcionalidades"
