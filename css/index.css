@@ -46,6 +46,20 @@ body {
     overflow-x: hidden;
 }
 
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(233, 233, 233);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #192a56;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
 section{
     padding: 2rem 10%;
     margin-top: 75px;
@@ -114,6 +128,10 @@ section:nth-child(even){
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+.header__logo:hover img {
+    scale: 1.1;
 }
 
 .header__logo__title {
@@ -214,8 +232,8 @@ section:nth-child(even){
 
 /* ABOUT */
 .main__about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main__about .row{
@@ -233,6 +251,10 @@ section:nth-child(even){
     width: 100%;
     height: auto;
     border-radius: 25px;
+}
+
+.main__about .image img:hover{ 
+    transform: scale(1.03)
 }
 
 .main__about .content{
@@ -270,6 +292,11 @@ section:nth-child(even){
     gap:1rem;
     flex:1 1 17rem;
     padding:1.5rem 1rem;
+    user-select: none;
+}
+
+.main__about .icons-container .icons:hover{
+    transform: scale(1.05);
 }
 
 .main__about .icons-container .icons i{
@@ -288,7 +315,7 @@ section:nth-child(even){
 
 /* REVIEWS */
 .main__reviews {
-    padding: 0;
+    padding: 200px 0;
 }
 
 .main__reviews__container {
@@ -391,7 +418,8 @@ section:nth-child(even){
 
 /* MENU */
 .main__menu {
-    padding-top: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main__menu__buttons {
@@ -453,6 +481,10 @@ section:nth-child(even){
     box-shadow: var(--box-shadow);
     padding-bottom: 75px;
     position: relative;
+}
+
+.main__menu .box-container .box:hover{
+    transform: scale(1.03);
 }
 
 .main__menu .box-container .box .image{
@@ -537,7 +569,7 @@ section:nth-child(even){
 
 /* EQUIPO */
 .main__team {
-    padding: 75px 0;
+    padding: 200px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -657,6 +689,11 @@ background: var(--red);
 
 
 /* ORDENAR */
+.main__order {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .main__order form{
     max-width:90rem;
     border-radius: .5rem;
