@@ -340,18 +340,18 @@ section:nth-child(even){
 }
 
 .swiper-slide {
-    margin: 1%;
+    margin: 1.5%;
     background-position: center;
     background-size: cover;
     width: 320px;
     box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
     border-radius: 15px;
     background: rgb(233, 233, 233);
-    filter: blur(3px);
+    opacity: 0.5;
 }
 
 .swiper-slide-active {
-    filter: blur(0);
+    opacity: 1;
     background: rgb(250, 250, 250);
     border-top: 2px solid var(--black);
     border-bottom: 2px solid var(--black);
@@ -369,7 +369,7 @@ section:nth-child(even){
     position: absolute;
     top: 20px;
     right: 30px;
-    opacity: .2;
+    opacity: .3;
 }
 
 .testimonialBox .content p {
@@ -965,9 +965,30 @@ background: var(--red);
 }
 
 @media (max-width: 35em){
+    .swiper-slide {
+        width: 250px;
+    }
+
+    .testimonialBox .quote {
+        width: 40px;
+    }
+
     .testimonialBox .content p {
         font-size: 2em;
         height: 150px;
+    }
+
+    .testimonialBox .imgBox {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .testimonialBox h4 {
+        font-size: 16px;
+    }
+    
+    .testimonialBox h4 span {
+        font-size: 14px;
     }
 
     .main__team__cards__card {
